@@ -21,3 +21,15 @@ accBtns.forEach(btn => {
         }
     });
 });
+
+// ************************************** 
+
+ const seidbarBtn = document.querySelector('.seidbarBtn')
+ const seidbarmenu = document.querySelector('.seidbarmenu')
+ 
+// Füge dem Button einen Klick-Event-Listener hinzu
+ seidbarBtn.addEventListener('click',function(){
+     seidbarmenu.classList.toggle('show')
+    seidbarBtn.classList.toggle('open')
+ })
+

@@ -8,6 +8,7 @@ body{
     flex-direction: column;
     height: 100vh;
 }
+/* accordion menu */
 .accordion{
     width: 80% ;
     height: 40px;
@@ -47,4 +48,42 @@ body{
 }.panel p{
     padding: 10px;
     margin: 0;
+}
+
+
+/* seidbar menu */
+.seidbarBtn{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 20px;
+    border: 0;;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.close::after{
+    content: '\000058 close';
+} 
+ .open::after{
+    content: '\002630 open';
+
+ } 
+.seidbarmenu{       /* Standardmäßig ist die Sidebar ausgeblendet */
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #434949;
+    transition: width 0.5s ease-in-out;
+}
+.seidbarmenu h2{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+.show{
+    width: 250px;
 }
